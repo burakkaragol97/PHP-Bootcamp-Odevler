@@ -6,7 +6,7 @@ Burada input kutusundan girilen değerleri form üzerinden aldım ve önceden ve
 
 Şifremi Unuttum(yenisifre.php)
 
-Login formuna yerleştirdiğim “Şifremi Unuttum” linkiyle kulalnıcıyı yenisifre.php sayfasına yönlendirdim. Burada kullanıcıdan aldığım kullanıcı adı, eski şifre ve yeni şifre gibi verileri veritabanıyla karşılaştırdım ve kullanıcının var olup olmadığını sorguladım. Eğer kullanıcı adı ve şifre mevcut veritabanında halihazırda varsa if komutunu devam ettirdim. Eğer yeni belirlenen şifre ile şifre kontrol bölümü uyuşuyorsa veritabanına bağlanarak yöneticinin şifresini, inputtan alınan yeni şifre verisi ile değiştirdim. Şifrenin başarılı bir şekilde gerçekleşmesini, kullanıcının olup olmadığını ve girilen şifre ile kontrol şifresinin aynı olup olmadığı kullanıcıya bildirdi.
+Login formuna yerleştirdiğim “Şifremi Unuttum” linkiyle kullanıcıyı yenisifre.php sayfasına yönlendirdim. Burada kullanıcıdan aldığım kullanıcı adı, eski şifre ve yeni şifre gibi verileri veritabanıyla karşılaştırdım ve kullanıcının var olup olmadığını sorguladım. Eğer kullanıcı adı ve şifre mevcut veritabanında halihazırda varsa if komutunu devam ettirdim. Eğer yeni belirlenen şifre ile şifre kontrol bölümü uyuşuyorsa veritabanına bağlanarak yöneticinin şifresini, inputtan alınan yeni şifre verisi ile değiştirdim. Şifrenin başarılı bir şekilde gerçekleşmesini, kullanıcının olup olmadığını ve girilen şifre ile kontrol şifresinin aynı olup olmadığını kullanıcıya bildirdim.
 
 Sistem(sistem.php) 
 
@@ -18,4 +18,4 @@ Burada girilmesini beklediğim veriler için inputlar oluşturdum ve inputtan al
 
 Öğrencileri Listeleme(liste.php)
 
-Burada ilk olarak, kayıtla eklenen öğrencilerin bilgilerini veritabanından çektim. Öğrencilerin sınıfı geçme durumunu listeleyeceğim tabloya aktarmak için, while döngüsü ile çektiğim öğrenci verilerinden aldığım sınav notlarının ortalamasının aldı. Ardından döngüden gelen öğrencileri tabloda listeledikten sonra if sorgusuyla öğrencinin geçip geçmediğini öğrendim ve buna bağlı olarak tabloya yazdırdım.
+Burada ilk olarak, kayıtla eklenen öğrencilerin bilgilerini veritabanından çektim. Öğrencilerin sınıfı geçme durumunu listeleyeceğim tabloya aktarmak için, while döngüsü ile çektiğim öğrenci verilerinden aldığım sınav notlarının ortalamasının aldım. Ardından döngüden gelen öğrencileri tabloda listeledikten sonra if sorgusuyla öğrencinin geçip geçmediğini öğrendim ve buna bağlı olarak tabloya yazdırdım.

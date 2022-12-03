@@ -1,3 +1,9 @@
+<?php
+    if($_SESSION["login"] == true) {
+
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,4 +67,7 @@
             echo "Kayıt eklenemedi";
         }
     }
+} else {
+    header("Location: login.php");
+}
 ?>

@@ -1,4 +1,9 @@
-<?php
+ session_start();
+
+    if($_SESSION["login"] == true) {
+
+    
+
     error_reporting(0);
     require("baglan.php");
     $sorgu = $baglan->query("select * from ogrenciler");
@@ -50,5 +55,7 @@
             <a href='mysqltocsv.php'>Öğrenci Kayıtlarını CSV Dosyası Olarak Kaydetmek İçin Tıklayın</a>
             <a href='yeni.php' style='display: inline-block;'>Yeni Öğrenci Kaydı Yapmak İçin Tıklayınız</a>    
         </div>";
-
+    }  else {
+        header("Location: login.php");
+    }
 ?>

@@ -1,3 +1,7 @@
+<?php
+    if($_SESSION["login"]) {
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,3 +18,9 @@
     </div>
 </body>
 </html>
+
+<?php
+    } else {
+        header("Location: login.php");
+    }
+?>

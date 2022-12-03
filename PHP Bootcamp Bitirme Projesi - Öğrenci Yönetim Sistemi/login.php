@@ -23,12 +23,14 @@
 </html>
 
 <?php
+    session_start();
     require("baglan.php");
 
     if(isset($_POST["sifremiunuttum"])) {
         header("Location: yenisifre.php");
     }
 
+    
    if($_POST) {
     $kullaniciAdi = $_POST["kullaniciadi"];
     $sifre = $_POST["sifre"];
@@ -41,7 +43,7 @@
         // $satir = $sorgu->fetch(PDO::FETCH_ASSOC);
 
         if($toplam > 0) {
-
+            $_SESSION["login"] = true;
             echo
             "<script> alert('Yönetici Girişi Başarılı!') </script>";
 
